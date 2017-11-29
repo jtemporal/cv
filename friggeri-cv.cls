@@ -138,7 +138,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \renewcommand{\section}[1]{
   \par\vspace{\parskip}
   {%
-    \LARGE\headingfont\color{headercolor}%
+    \Large\headingfont\color{headercolor}%
     \@sectioncolor #1%
   }
   \par\vspace{\parskip}
@@ -178,6 +178,14 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
+    \small#5\vspace{\parsep}%
+  }\\}
+\newcommand{\talkentry}[5]{%
+  #1&\parbox[t]{11cm}{%
+    \textbf{#2}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+    \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
     \small#5\vspace{\parsep}%
   }\\}
