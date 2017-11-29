@@ -24,6 +24,7 @@
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
+\definecolor{aqua}{HTML}{5FE1C9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 
@@ -31,6 +32,7 @@
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
   \colorlet{purple}{gray}
+  \colorlet{aqua}{aqua}
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
   \colorlet{fillheader}{white}
@@ -122,10 +124,11 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \color{%
       \ifcase\value{colorCounter}%
         blue\or%
-        red\or%
         orange\or%
-        green\or%
-        purple\else%
+        red\or%
+        aqua\or%
+        purple\or%
+        green\else%
         headercolor\fi%
     } #1#2#3%
   }%
