@@ -164,11 +164,19 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{11cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     #4\vspace{\parsep}%
+  }\\}
+\newcommand{\entrysecondtype}[5]{%
+  #1&\parbox[t]{11cm}{%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
+    #5\vspace{\parsep}%
   }\\}
 
 
