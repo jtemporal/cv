@@ -168,7 +168,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    \small#4\vspace{\parsep}%
   }\\}
 \newcommand{\entrysecondtype}[5]{%
   #1&\parbox[t]{11cm}{%
@@ -176,7 +176,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
     {\footnotesize\addfontfeature{Color=lightgray} #4}\\%
-    #5\vspace{\parsep}%
+    \small#5\vspace{\parsep}%
   }\\}
 
 
